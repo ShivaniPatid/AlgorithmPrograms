@@ -12,6 +12,7 @@ namespace AlgorithmPrograms
         {
             Console.WriteLine("Choose a option");
             Console.WriteLine("1. All permutations of a String");
+            Console.WriteLine("2. Insertion sort of an array of a string");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -20,6 +21,9 @@ namespace AlgorithmPrograms
                     string str = "ABC";
                     int n = str.Length;
                     StringPermutations.Permute(str, 0, n - 1);
+                    break;
+                case 2:
+                    InsertionSort.SortArray();
                     break;
                 default:
                     Console.WriteLine("Choose a appropriate option");
