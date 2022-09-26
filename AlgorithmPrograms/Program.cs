@@ -13,7 +13,8 @@ namespace AlgorithmPrograms
             Console.WriteLine("Choose a option");
             Console.WriteLine("1. All permutations of a String");
             Console.WriteLine("2. Insertion sort of an array of a string");
-            Console.WriteLine("2. Bubble sort of an array of a integer");
+            Console.WriteLine("3. Bubble sort of an array of a integer");
+            Console.WriteLine("4. Anagram Detection");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -28,6 +29,9 @@ namespace AlgorithmPrograms
                     break;
                 case 3:
                     BubbleSort.SortArray();
+                    break;
+                case 4:
+                    AnagramProgram.AnagramDetection();
                     break;
                 default:
                     Console.WriteLine("Choose a appropriate option");
