@@ -15,6 +15,7 @@ namespace AlgorithmPrograms
             Console.WriteLine("2. Insertion sort of an array of a string");
             Console.WriteLine("3. Bubble sort of an array of a integer");
             Console.WriteLine("4. Anagram Detection");
+            Console.WriteLine("5. Print Prime Numbers");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -32,6 +33,9 @@ namespace AlgorithmPrograms
                     break;
                 case 4:
                     AnagramProgram.AnagramDetection();
+                    break;
+                case 5:
+                    PrimeNumber.PrintPrimeNumber();
                     break;
                 default:
                     Console.WriteLine("Choose a appropriate option");
